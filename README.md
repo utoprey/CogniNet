@@ -24,8 +24,12 @@ In general in notebook is build a gridsearch function (number of folders = 5) wh
 #### GAT architecture 
 <img src="Docs/gat_architecture.png" alt="Graph Attention Network Architecture" width="800">
 
+A Graph Attention Network (GAT) is a neural network architecture that operates on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods’ features, a GAT enables (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront[^1]
+
+[^1]: Veličković, Petar, et al. "Graph attention networks." arXiv preprint arXiv:1710.10903 (2017).
 
 
+ 
 # **Repository Structure**
 - **Docs folder**: collection of images used for creating readme.md and presentation.
 - **ML part folder**: 1) `cobre_2203.ipynb`, 2) `abide_2203.ipynb` and 3) `XGBoost_22.03` - three notebooks to run classic ML approaches.
