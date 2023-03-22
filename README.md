@@ -35,13 +35,16 @@ In general in notebook is build a gridsearch function (number of folders = 5) wh
 # **How to Use**
 1. Implement classic machine learning (ML) approach
 * step 1: Download `data` folder and correct Jupyter notebook considering the dataset you want to analyze
-For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for downloading dataset: `[ABIDE dataset](https://drive.google.com/drive/folders/1Xw-x9Zpfe-gEM0OLzDr35dlSzUVp2c2j?usp=sharing)`,
+For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for downloading dataset: [ABIDE dataset](https://drive.google.com/drive/folders/1Xw-x9Zpfe-gEM0OLzDr35dlSzUVp2c2j?usp=sharing).
 * step 2: Put your data in one folder. There should lay correct file for splits in `.json` format and appropriate data files `cobre` or `abide` (ex: `C:/Users/ZenBook/Desktop/schizophrenia/cobre/aal`)
 * step 3: Run Jupyter notebook
 
 2. Implement graph approach
 * step 1:
 * step 2:
+
+# **Relevant papers**
+Can be found [here] (https://github.com/maryjis/multimodal_DL)
 
 # **Conclusion**
 ## COBRE results
