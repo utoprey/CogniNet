@@ -30,7 +30,7 @@ In general in notebook is build a gridsearch function (number of folders = 5) wh
 - **Docs folder**: collection of images used for creating readme.md and presentation.
 - **ML part folder**: 1) `cobre_2203.ipynb`, 2) `abide_2203.ipynb` and 3) `XGBoost_22.03` - three notebooks to run classic ML approaches.
 - **abide folder**: 1) `abide_splits.json` - file with id which are split into train-val-test subsrts for 5 folds; 2) `abide_targets.csv` - from here `SUB_ID` or `subject` and `DX_GROUP` can be used as targets.
-- **cobre folder**: 1) all folder - collection of data; 2) cobre_splits_new.json - splits into train-val-test subsrts for 5 folds; 3) cobre_targets.tsv - `Dx` is a target.
+- **cobre folder**: 1) all folder - collection of data; 2) `cobre_splits_new.json` - splits into train-val-test subsrts for 5 folds; 3) `cobre_targets.tsv` - `Dx` is a target.
 
 # **How to Use**
 1. Implement classic machine learning (ML) approach
