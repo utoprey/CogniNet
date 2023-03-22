@@ -44,7 +44,7 @@ For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for d
 * step 2:
 
 # **Relevant papers**
-Can be found [here](https://github.com/maryjis/multimodal_DL).
+Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.com/maryjis/multimodal_DL).
 
 # **Conclusions**
 ## COBRE results
@@ -65,8 +65,12 @@ Can be found [here](https://github.com/maryjis/multimodal_DL).
 | SVM + PCA |   **0.69 ± 0.017**       |   0.68 ± 0.015       |   0.68 ± 0.016     |
 | XGBoost |   0.65 ± 0.007       |   0.63 ± 0.010       |   0.63 ± 0.011      |
 
+## GAN results
+
 # **Prerequisites**
 * Python 3.10
+* PyTorch 1.10.2
+* PyTorch Geometric 2.0.3
 * Google Colaboratory service or Jupyter notebook
 
 
