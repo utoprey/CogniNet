@@ -51,10 +51,10 @@ In general in notebook is build a gridsearch function (number of folders = 5) wh
 ## ABIDE results
 |      | F1 Score | Accuracy | ROC-AUC |
 |------|:--------:|:--------:|:-------:|
-| Logistic Regresioin |  0.65 ± 0.010       |   0.66 ± 0.009       |  0.66 ± 0.009    |
+| Logistic Regresioin |  0.66 ± 0.013       |   0.66 ± 0.013       |  0.66 ± 0.013    |
 | Random Forest |   0.65 ± 0.037       |   0.67 ± 0.030       |   0.67 ± 0.031      |
-| SVM |   0.67 ± 0.027       |   0.69 ± 0.008       |   0.69 ± 0.009      |
-| SVM + PCA |   **0.72 ± 0.059**       |   0.75 ± 0.052       |   0.75 ± ?     |
+| SVM |   0.67 ± 0.012       |   0.67 ± 0.013       |   0.67 ± 0.013      |
+| SVM + PCA |   **0.69 ± 0.017**       |   0.68 ± 0.015       |   0.68 ± 0.016     |
 | XGBoost |   0.65 ± 0.007       |   0.63 ± 0.010       |   0.63 ± 0.011      |
 
 # **Prerequisites**
