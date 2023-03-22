@@ -44,9 +44,9 @@ For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for d
 * step 2:
 
 # **Relevant papers**
-Can be found [here] (https://github.com/maryjis/multimodal_DL)
+Can be found [here](https://github.com/maryjis/multimodal_DL).
 
-# **Conclusion**
+# **Conclusions**
 ## COBRE results
 |      | F1 Score | Accuracy | ROC-AUC |
 |------|:--------:|:--------:|:-------:|
