@@ -62,9 +62,11 @@ Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.
 |------|:--------:|:--------:|:-------:|
 | Logistic Regresioin |  0.73 ± 0.056       |   0.76 ± 0.045       |  0.76 ± 0.049    |
 | Random Forest |   0.65 ± 0.073       |   0.69 ± 0.064       |   0.69 ± 0.065      |
-| SVM |   **0.76 ± 0.058**       |   0.78 ± 0.039       |   0.79 ± 0.047      |
+| SVM |   0.76 ± 0.058      |   0.78 ± 0.039       |   0.79 ± 0.047      |
 | SVM + PCA |   0.71 ± 0.987       |   0.76 ± 0.062       |   0.75 ± 0.072      |
 | XGBoost |   0.67 ± 0.044       |   0.72 ± 0.029       |   0.71 ± 0.033      |
+| bgbGAT |    0.70 ±	0.045   |  0.67 ±	0.036  |   0.72 ±	0.042  |
+| MLP   |    **0.79 ± 0.018** 	 |  0.78	± 0.024 | 0.79 ±	0.038  |
 
 ## ABIDE results
 |      | F1 Score | Accuracy | ROC-AUC |
@@ -72,8 +74,10 @@ Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.
 | Logistic Regresioin |  0.66 ± 0.013       |   0.66 ± 0.013       |  0.66 ± 0.013    |
 | Random Forest |   0.65 ± 0.037       |   0.67 ± 0.030       |   0.67 ± 0.031      |
 | SVM |   0.67 ± 0.012       |   0.67 ± 0.013       |   0.67 ± 0.013      |
-| SVM + PCA |   **0.69 ± 0.017**       |   0.68 ± 0.015       |   0.68 ± 0.016     |
+| SVM + PCA |   0.69 ± 0.017      |   0.68 ± 0.015       |   0.68 ± 0.016     |
 | XGBoost |   0.65 ± 0.007       |   0.63 ± 0.010       |   0.63 ± 0.011      |
+| bgbGAT |    0.67 ± 0.015     |   0.65 ±	0.015         |  0.68	0.017   |
+| MLP   |    **0.71 ±	0.012**   |  0.67 ±	0.017    |  0.71 ±	0.015  |
 
 ## GAN results
 We implemented the following variation of GAT architecture (bgbGAT), main idea of architechture was taken from [Gennady Laptev](https://github.com/gennadylaptev/neurograph/tree/main/neurograph) with changes
@@ -88,12 +92,12 @@ To compare GAT and MLP we performed reinitializations of both models 10 times, t
 
 <img src="Docs/metrics_graphNN_MLP.png" alt="Metrics bgbGAT vs MLP" width="800">
 
-Unfortunately, even the simple MLP is better than Graph NN on both datasets, and classic ML approaches give us results comparable with DL approaches. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic/medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
+Unfortunately, even the simple MLP is better than Graph NN on both datasets, and classic ML approaches give us results comparable with DL approaches. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic and medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
 
 # **Prerequisites**
 * Python 3.10
-* PyTorch 1.10.2
-* PyTorch Geometric 2.0.3
+* PyTorch 2.0.0
+* PyTorch Geometric 2.3.0
 * Google Colaboratory service or Jupyter notebook
 
 
