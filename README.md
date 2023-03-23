@@ -61,8 +61,10 @@ For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for d
 * step 3: Run Jupyter notebook
 
 2. Implement graph approach
-* step 1:
-* step 2:
+* step 1: Download `data` folder and correct Jupyter notebook considering the dataset you want to analyze
+For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for downloading dataset: [ABIDE dataset](https://drive.google.com/drive/folders/1Xw-x9Zpfe-gEM0OLzDr35dlSzUVp2c2j?usp=sharing).
+* step 2: Put your data in folders `DATA/abide` or 'DATA/cobre`, respectively. You may change the pathways to data changing variables `abide_desc_path` (pathway to `Phenotypic_V1_0b_preprocessed1.csv` file), `abide_folders` (pathway to ABIDE participants' folders) and `cobre_csvs_path` (pathway to COBRE participants' folders) in the notebook.
+* step 3: Run Jupyter notebook
 
 # **Relevant papers**
 Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.com/maryjis/multimodal_DL).
