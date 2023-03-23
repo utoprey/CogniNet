@@ -19,6 +19,9 @@ The Autism Brain Imaging Data Exchange (ABIDE) is a collection of brain correlat
 
 In this notebook we build a gridsearch function (number of folds = 5) which iterates over parametres for different machime learning models' parametres on train and validation splits, then takes the mean f1 score for every fold and defines the best model by this metric. After defining one best model on validation data it's been evaluated on test splits.
 
+#### Figure describing code logic
+<img src="Docs/figure_code logic_block diagram.png" alt="ML Architecture" width="800">
+
 2. Code description for DL part (Graph Attention Network (GAT) and multilayer perceptron (MPL))
 
 In this notebook Graph NN (bgbGAT) with adjusted hyperparameters is implemented and compared with MLP by F1 Score, Accuracy and ROC-AUC metrics. Part of the notebook is dedicated to preprocessing of the connectivity matrices to convert them into torch geometric data for input in Graph NN. Train-test split of the data is the same as in ML notebook.
@@ -34,7 +37,7 @@ A Graph Attention Network (GAT) is a neural network architecture that operates o
  
 # **Repository Structure**
 - **Docs folder**: collection of images used for creating readme.md and presentation.
-- **ML part folder**: 1) `cobre_2203.ipynb`, 2) `abide_2203.ipynb` and 3) `XGBoost_22.03` - three notebooks to run classic ML approaches.
+- **ML part folder**: 1) `cobre_2203.ipynb`, 2) `abide_2203.ipynb` and 3) `XGBoost_2203.ipynb` - three notebooks to run classic ML approaches.
 - **DL part folder**: `Graph_NN_&_MLP.ipynb` - notebook to run GAT neural network and compare it with MLP
 - **abide folder**: 1) `abide_splits.json` - file with id which are split into train-val-test subsrts for 5 folds; 2) `abide_targets.csv` - from here `SUB_ID` or `subject` and `DX_GROUP` can be used as targets.
 - **cobre folder**: 1) all folder - collection of data; 2) `cobre_splits_new.json` - splits into train-val-test subsrts for 5 folds; 3) `cobre_targets.tsv` - `Dx` is a target.
