@@ -28,20 +28,6 @@ In this notebook Graph NN (bgbGAT) is implemented with adjusted hyperparameters 
 
 A Graph Attention Network (GAT) is a neural network architecture that operates on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods’ features, a GAT enables (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront[^1]
 
-We implemented the following variation of GAT architecture (bgbGAT), main idea of architechture was taken from [Gennady Laptev](https://github.com/gennadylaptev/neurograph/tree/main/neurograph) with changes
-
-<img src="Docs/graph_NN_architecture.png" alt="GAT architecture" width="600">
-
-We compared bgbGAT architecture with tuned MLP (see architecture on the bottom picture)
-
-<img src="Docs/mlp_architecture.png" alt="MLP architecture" width="600">
-
-To compare GAT and MLP we performed reinitializations of both models 10 times, trained them for 60 epochs with evaluation of the metrics on the test data after each epoch. The best scores on the test data in each training are shown on the bottom picture.
-
-<img src="Docs/metrics_graphNN_MLP.png" alt="Metrics bgbGAT vs MLP" width="800">
-
-Unfortunately, even the simple MLP is better than Graph NN on both datasets. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic/medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
-
 [^1]: Veličković, Petar, et al. "Graph attention networks." arXiv preprint arXiv:1710.10903 (2017).
 
 
@@ -89,6 +75,19 @@ Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.
 | XGBoost |   0.65 ± 0.007       |   0.63 ± 0.010       |   0.63 ± 0.011      |
 
 ## GAN results
+We implemented the following variation of GAT architecture (bgbGAT), main idea of architechture was taken from [Gennady Laptev](https://github.com/gennadylaptev/neurograph/tree/main/neurograph) with changes
+
+<img src="Docs/graph_NN_architecture.png" alt="GAT architecture" width="600">
+
+We compared bgbGAT architecture with tuned MLP (see architecture on the bottom picture)
+
+<img src="Docs/mlp_architecture.png" alt="MLP architecture" width="600">
+
+To compare GAT and MLP we performed reinitializations of both models 10 times, trained them for 60 epochs with evaluation of the metrics on the test data after each epoch. The best scores on the test data in each training are shown on the bottom picture.
+
+<img src="Docs/metrics_graphNN_MLP.png" alt="Metrics bgbGAT vs MLP" width="800">
+
+Unfortunately, even the simple MLP is better than Graph NN on both datasets. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic/medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
 
 # **Prerequisites**
 * Python 3.10
