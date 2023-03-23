@@ -21,7 +21,7 @@ In general in notebook is build a gridsearch function (number of folders = 5) wh
 
 2. Code description for DL part (Graph Attention Network (GAT) and multilayer perceptron (MPL))
 
-In this notebook Graph NN (bgbGAT) is implemented with adjusted hyperparameters and compared with MLP by F1 Score, Accuracy and ROC-AUC metrics. Part of the notebook is dedicated to preprocessing of the connectivity matrices to convert them into torch geometric data for input in Graph NN. Train-test split of the data is the same as in ML notebook.
+In this notebook Graph NN (bgbGAT) with adjusted hyperparameters is implemented and compared with MLP by F1 Score, Accuracy and ROC-AUC metrics. Part of the notebook is dedicated to preprocessing of the connectivity matrices to convert them into torch geometric data for input in Graph NN. Train-test split of the data is the same as in ML notebook.
 
 #### GAT architecture 
 <img src="Docs/gat_architecture.png" alt="Graph Attention Network Architecture" width="800">
