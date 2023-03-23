@@ -86,7 +86,7 @@ We implemented the following variation of GAT architecture (bgbGAT), main idea o
 
 We compared bgbGAT architecture with tuned MLP (see architecture on the bottom picture)
 
-<img src="Docs/mlp_architecture.png" alt="MLP architecture" width="600">
+<img src="Docs/GATConv_NN.png" alt="MLP architecture" width="600">
 
 To compare GAT and MLP we performed reinitializations of both models 10 times, trained them for 60 epochs with evaluation of the metrics on the test data after each epoch. The best scores on the test data in each training are shown on the bottom picture.
 
