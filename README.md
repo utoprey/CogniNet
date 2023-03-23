@@ -87,7 +87,7 @@ To compare GAT and MLP we performed reinitializations of both models 10 times, t
 
 <img src="Docs/metrics_graphNN_MLP.png" alt="Metrics bgbGAT vs MLP" width="800">
 
-Unfortunately, even the simple MLP is better than Graph NN on both datasets whereas classic ML approaches give us comparable results. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic/medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
+Unfortunately, even the simple MLP is better than Graph NN on both datasets, and classic ML approaches give us results comparable with DL approaches. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic/medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
 
 # **Prerequisites**
 * Python 3.10
