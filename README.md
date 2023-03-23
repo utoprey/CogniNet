@@ -17,7 +17,7 @@ The Autism Brain Imaging Data Exchange (ABIDE) is a collection of brain correlat
 # **Methods**
 1. Code description for ML part
 
-In general in notebook is build a gridsearch function (number of folders = 5) which iterates over parametres for different machime learning models' parametres on train and validation splits, then takes the mean f1 score for every fold and defines the best model by this metric. After defining one best model on validation data it's been evaluated on test splits.
+In this notebook we build a gridsearch function (number of folds = 5) which iterates over parametres for different machime learning models' parametres on train and validation splits, then takes the mean f1 score for every fold and defines the best model by this metric. After defining one best model on validation data it's been evaluated on test splits.
 
 2. Code description for DL part (Graph Attention Network (GAT) and multilayer perceptron (MPL))
 
