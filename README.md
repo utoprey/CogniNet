@@ -19,12 +19,28 @@ The Autism Brain Imaging Data Exchange (ABIDE) is a collection of brain correlat
 
 In general in notebook is build a gridsearch function (number of folders = 5) which iterates over parametres for different machime learning models' parametres on train and validation splits, then takes the mean f1 score for every fold and defines the best model by this metric. After defining one best model on validation data it's been evaluated on test splits.
 
-2. Code description for Graph Attention Network (GAT) part
+2. Code description for DL part (Graph Attention Network (GAT) and multilayer perceptron (MPL))
+
+In this notebook Graph NN (bgbGAT) is implemented with adjusted hyperparameters and compared with MLP by F1 Score, Accuracy and ROC-AUC metrics. Part of the notebook is dedicated to preprocessing of the connectivity matrices to convert them into torch geometric data for input in Graph NN. Train-test split of the data is the same as in ML notebook.
 
 #### GAT architecture 
 <img src="Docs/gat_architecture.png" alt="Graph Attention Network Architecture" width="800">
 
 A Graph Attention Network (GAT) is a neural network architecture that operates on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods’ features, a GAT enables (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront[^1]
+
+We implemented the following variation of GAT architecture (bgbGAT), main idea of architechture was taken from [Gennady Laptev](https://github.com/gennadylaptev/neurograph/tree/main/neurograph) with changes
+
+<img src="Docs/graph_NN_architecture.png" alt="GAT architecture" width="600">
+
+We compared bgbGAT architecture with tuned MLP (see architecture on the bottom picture)
+
+<img src="Docs/mlp_architecture.png" alt="MLP architecture" width="600">
+
+To compare GAT and MLP we performed reinitializations of both models 10 times, trained them for 60 epochs with evaluation of the metrics on the test data after each epoch. The best scores on the test data in each training are shown on the bottom picture.
+
+<img src="Docs/metrics_graphNN_MLP.png" alt="Metrics bgbGAT vs MLP" width="800">
+
+Unfortunately, even the simple MLP is better than Graph NN on both datasets. We suppose reasons for that are small datasets (lack of data) and specific nature of medical data. The problem is that in case of biologic/medical research it is ofter impossible to get "Big Data" so application of Graph NN seems to be overkill.
 
 [^1]: Veličković, Petar, et al. "Graph attention networks." arXiv preprint arXiv:1710.10903 (2017).
 
