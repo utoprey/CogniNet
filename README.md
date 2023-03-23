@@ -82,7 +82,7 @@ Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.
 ## GAN results
 We implemented the following variation of GAT architecture (bgbGAT), main idea of architechture was taken from [Gennady Laptev](https://github.com/gennadylaptev/neurograph/tree/main/neurograph) with changes
 
-<img src="Docs/graph_NN_architecture.png" alt="GAT architecture" width="600">
+<img src="Docs/GATConv_NN.png" alt="GAT architecture" width="600">
 
 We compared bgbGAT architecture with tuned MLP (see architecture on the bottom picture)
 
