@@ -103,6 +103,13 @@ Unfortunately, even the simple MLP is better than Graph NN on both datasets, and
 * PyTorch Geometric 2.3.0
 * Google Colaboratory service or Jupyter notebook
 
+# **CogniNet Team**
+* Ekaterina Antipushina
+* Marina Morozova
+* Ruslan Kalimullin
+* Mikhail Knyshenko 
 
+# **Thanks!**
+<img src="Docs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
 
 
