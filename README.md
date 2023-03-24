@@ -2,6 +2,11 @@
 
 This repository contains the code and data for the final project course for machine learning, which aims to build benchmarking for classification problems based on fMRI data. The goal of this project is to compare current state-of-the-art methods on unimodal data and determine which approach works best for a given dataset, in order to inform future research in this area.
 
+## **Project presentation and report**
+
+#### Presntation: (https://github.com/utoprey/CogniNet/blob/main/CogniNet_FinalProject_Presentation.pdf)
+#### Report: (https://github.com/utoprey/CogniNet/blob/main/CogniNet_Final_Project_2023_Machine_Learning.pdf)
+
 # **General Project Goals**
 The general project goals are:
 * Implement standard machine learning approaches, such as Logistic Regression, SVM, XGBoost, Random Forest and PCA, on unimodal datasets.
