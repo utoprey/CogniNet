@@ -105,7 +105,7 @@ Unfortunately, even the simple MLP is better than Graph NN on both datasets, and
 
 # **CogniNet Team**
 * Ekaterina Antipushina (Skoltech LS MSc, ADASE NEURO lab)
-* Marina Morozova(Skoltech LS PhD, CNBR)
+* Marina Morozova (Skoltech LS PhD, CNBR)
 * Ruslan Kalimullin (Skoltech LS MSc, ADASE NEURO lab, CNBR)
 * Mikhail Knyshenko (Skoltech LS MSc, CNBR)
 ## Spetial thanks for our mentors:
