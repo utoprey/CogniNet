@@ -104,10 +104,10 @@ Unfortunately, even the simple MLP is better than Graph NN on both datasets, and
 * Google Colaboratory service or Jupyter notebook
 
 # **CogniNet Team**
-* Ekaterina Antipushina
-* Marina Morozova
-* Ruslan Kalimullin
-* Mikhail Knyshenko 
+* Ekaterina Antipushina (Skoltech LS MSc, ADASE NEURO lab)
+* Marina Morozova(Skoltech LS PhD, CNBR)
+* Ruslan Kalimullin (Skoltech LS MSc, ADASE NEURO lab, CNBR)
+* Mikhail Knyshenko (Skoltech LS MSc, CNBR)
 
 # **Thanks!**
 <img src="Docs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
