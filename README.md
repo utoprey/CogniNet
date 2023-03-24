@@ -36,7 +36,7 @@ A Graph Attention Network (GAT) is a neural network architecture that operates o
 
  
 # **Repository Structure**
-- **Docs folder**: collection of images used for creating readme.md and presentation.
+- **Docs folder**: collection of images and all files used for creating readme.md, presentation and report.
 - **ML part folder**: 1) `cobre_2203.ipynb`, 2) `abide_2203.ipynb` and 3) `XGBoost_2203.ipynb` - three notebooks to run classic ML approaches.
 - **DL part folder**: `Graph_NN_&_MLP.ipynb` - notebook to run GAT neural network and compare it with MLP
 - **abide folder**: 1) `abide_splits.json` - file with id which are split into train-val-test subsrts for 5 folds; 2) `abide_targets.csv` - from here `SUB_ID` or `subject` and `DX_GROUP` can be used as targets.
