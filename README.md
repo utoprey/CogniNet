@@ -4,7 +4,7 @@ This repository contains the code and data for the final project course for mach
 
 ## **Project presentation and report**
 
-#### Presntation: (https://github.com/utoprey/CogniNet/blob/main/CogniNet_FinalProject_Presentation.pdf)
+#### Presentation: (https://github.com/utoprey/CogniNet/blob/main/CogniNet_FinalProject_Presentation.pdf)
 #### Report: (https://github.com/utoprey/CogniNet/blob/main/CogniNet_Final_Project_2023_Machine_Learning.pdf)
 
 # **General Project Goals**
