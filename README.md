@@ -29,7 +29,7 @@ In this notebook we build a gridsearch function (number of folds = 5) which iter
 
 2. Code description for DL part (Graph Attention Network (GAT) and multilayer perceptron (MPL))
 
-In this notebook Graph NN (bgbGAT) with adjusted hyperparameters is implemented and compared with MLP by F1 Score, Accuracy and ROC-AUC metrics. Part of the notebook is dedicated to preprocessing of the connectivity matrices to convert them into torch geometric data for input in Graph NN. Train-test split of the data is the same as in ML notebook. Don't forget to write `from torch_geometric.nn import Sequential as pygSequential`
+In this notebook Graph NN (bgbGAT) with adjusted hyperparameters is implemented and compared with MLP by F1 Score, Accuracy and ROC-AUC metrics. Part of the notebook is dedicated to preprocessing of the connectivity matrices to convert them into torch geometric data for input in Graph NN. Train-test split of the data is the same as in ML notebook. 
 
 #### GAT architecture 
 <img src="Docs/gat_architecture.png" alt="Graph Attention Network Architecture" width="800">
@@ -59,7 +59,7 @@ For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for d
 * step 1: Download `data` folder and correct Jupyter notebook considering the dataset you want to analyze
 For COBRE go to `utoprey/CogniNet/cobre/aal`, for ABIDE use following link for downloading dataset: [ABIDE dataset](https://drive.google.com/drive/folders/1Xw-x9Zpfe-gEM0OLzDr35dlSzUVp2c2j?usp=sharing).
 * step 2: Put your data in folders `DATA/abide` or `DATA/cobre`, respectively. You may change the pathways to data changing variables `abide_desc_path` (pathway to `Phenotypic_V1_0b_preprocessed1.csv` file), `abide_folders` (pathway to ABIDE participants' folders) and `cobre_csvs_path` (pathway to COBRE participants' folders) in the notebook.
-* step 3: Run Jupyter notebook
+* step 3: Run Jupyter notebook (Don't forget to write `from torch_geometric.nn import Sequential as pygSequential`)
 
 # **Relevant papers**
 Can be found [here](https://arxiv.org/abs/2204.07054) and [here](https://github.com/maryjis/multimodal_DL).
