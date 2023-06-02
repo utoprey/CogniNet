@@ -109,7 +109,7 @@ Unfortunately, even the simple MLP is better than Graph NN on both datasets, and
 * Google Colaboratory service or Jupyter notebook
 
 # **CogniNet Team**
-* Ekaterina Antipushina (Skoltech LS MSc, ADASE NEURO lab)
+* Ekaterina Antipushina (Skoltech LS MSc, ADASE NEURO lab, CNBR)
 * Marina Morozova (Skoltech LS PhD, CNBR)
 * Ruslan Kalimullin (Skoltech LS MSc, ADASE NEURO lab, CNBR)
 * Mikhail Knyshenko (Skoltech LS MSc, CNBR)
